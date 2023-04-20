@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabelas</title>
+        <style>
+            section h1 {
+                color: crimson;
+                text-align: center;
+            }
+            table {
+                border-collapse: collapse;
+                margin: auto;
+                position: relative;
+                width: 800px;
+            }
+            td, th{
+                border: 1px solid black;
+                padding: 10px;
+                /* text-align: center;  Alinhamento horizontal */
+                /* vertical-align: middle;  Alinhamento vertical */
+            }
+            caption {
+                background-color: lightgray;
+                font-size: 1.5em;
+                font-weight: bold;
+                padding: 10px;
+            }
+            thead, tfoot {
+                background-color: gray;
+                color: white;
+            }
+            thead>tr>th {
+                position: sticky;
+                top: -1px;
+                background-color: #383838;
+            }
+            tbody>tr:nth-child(2n) { /* 2n efeito zebrado a cada 2 células, odd números ímpares, even números pares */
+                background-color: lightgray;
+            }
+            td.num {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Tabela Simples</h1>
+        <!-- HIERARQUIA DE TABELAS (SIMPLES)
+            Table = Tabela
+                Table Row = Linha de Tabela
+                    Table Header = Cabeçalho de Tabela
+                    Table Data = Dado de Tabela 
+        -->
+            <table>
+                <tr>
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+                <tr>
+                    <td>A4</td>
+                    <td>A4</td>
+                    <td>A4</td>
+                </tr>
+            </table>
+
+            <h1>Tabela Grande</h1>
+        <!-- ANATOMIA DE TABELAS (GRANDES)
+            Table = Tabela
+            Caption = Legenda
+                THEAD
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+        -->
+
+            <table>
+                <caption>População das Unidades Federativas</caption>
+                <thead>
+                    <tr>
+                        <!-- é importante utilizar para os mecanismos de busca:
+                            scope=col para coluna 
+                            scope=row para linha 
+                        -->
+                        <th scope="col">Estado</th> 
+                        <th scope="col">População</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td class="num">45 919 49</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td class="num">21 168 791</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="num">17 264 943</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td class="num">14 873 064</td>
+                    </tr>
+                    <tr>
+                        <td>Paraná</td>
+                        <td class="num">11 433 957</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Sul</td>
+                        <td class="num">11 377 239</td>
+                    </tr>
+                    <tr>
+                        <td>Pernambuco</td>
+                        <td class="num">9 557 071</td>
+                    </tr>
+                    <tr>
+                        <td>Ceará</td>
+                        <td class="num">9 132 078</td>
+                    </tr>
+                    <tr>
+                        <td>Pará</td>
+                        <td class="num">8 602 865</td>
+                    </tr>
+                    <tr>
+                        <td>Santa Catarina</td>
+                        <td class="num">7 164 788</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th scope="row">Total de Habitantes</th>
+                    <td scope="row">115 166 745</td>
+                </tfoot>
+            </table>
+
+            <h1>Mesclagem de Células</h1>
+            <table style="text-align: center;">
+                <tr>
+                    <td colspan="2">A</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">D</td>
+                    <td>E</td>
+                    <td rowspan="2">F</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td colspan="2">K</td>
+                </tr>
+            </table>
+       </section>
+    </body>
+</html>

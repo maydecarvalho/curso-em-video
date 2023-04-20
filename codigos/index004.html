@@ -1,0 +1,304 @@
+<!-- TAGS CSS -->
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/style004.css">
+        <title>CCS3</title>
+    </head>
+    <body>
+        <header>
+            <h1>ESTRUTURA DE UM CSS</h1>
+            <p class="inf-text"> O CSS precisa de um seletor, uma chave de abertura, uma declaração com uma propriedade e valor, uma chave de fechamento.</p>
+
+            <nav>
+                <a href="index.html" rel="prev"><button>Home</button></a>
+                <a href="index002.html" rel="prev"><button>Conteúdo</button></a> 
+                <a href="index003.html" rel="prev"><button>HTML5</button></a>
+                <a href="index004.html"><button>CSS3</button></a>
+                <a href="index005.html" rel="next"><button>Exercícios</button></a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>CSS3</h1>
+            <div>
+                <section>
+                    <h2>* = Configuração Globais CSS</h2>
+                <hr>
+                    <h2>Shorthand -> Propriedades com vários valores</h2>
+                    <p><strong>animation: _____;</strong></p>
+                    <p><strong>background: _____;</strong> = (color -> image -> repeat -> size -> attachment) obs: o size n funciona na shorthand no momento.</p>
+                    <p><strong>border: ___;</strong> = (border-width -> border-style -> border-color)</p>
+                    <p><strong>border-radius: ___;</strong> = Arredondar a borda (px)</p>
+                    <p><strong>box-shadow: ___;</strong> = (eixo X (+ ou -) -> eixo Y (+ ou -) -> desfoque -> expandir -> cor -> inset = criar a sombra na frente do elemento) <br> (X + = sombra direita, X - = sombra esquerda, Y + = sombra pra baixo, Y - = sombra pra cima)</p>
+                    <p><strong>font: ___;</strong> = (font-style -> font-weight -> font-size -> font-family)</p>
+                    <p><strong>outline: ___;</strong> = (outline-width -> outline-style -> outline-color)</p>
+                <hr>
+                    <h2>Pseudo Classes</h2>
+                    <p><strong>:active</strong> = Aplicar estilo quando clicar e segurar um link</p>
+                    <p><strong>:hover</strong> = Aplicar um estilo quando passar o mousse em cima</p>
+                    <p><strong>:visited</strong> = Aplicar um estilo quando clicar no link</p>
+                <hr>
+                    <p><strong>background-image: linear-gradient(_____);</strong> = Cor de Fundo Gradiente</p>
+                    <p><strong>background-image: url(_____);</strong></p>
+                    <p><strong>background-size: _____;</strong></p>
+                    <p><strong>background-repeat: _____;</strong></p>
+                    <p><strong>background-position: _____;</strong></p>
+                <hr>
+                    <p><strong>text-indent: ___;</strong> px = Indentação no Início do Parágrafo</p>
+                    <hr>
+                </section>
+
+                <section>
+                    <h2>border-radius -> Arredondar a Borda</h2>
+                    <p><strong>border-top-left-radius: ___;</strong> = Em cima e esquerda (px)</p>
+                    <p><strong>border-top-right-radius: ___;</strong> = Em cima e direita (px)</p>
+                    <p><strong>border-bottom-right-radius: ___;</strong> Em baixo e direita (px)</p>
+                    <p><strong>border-bottom-left-radius: ___;</strong> = Em baixo e esquerda (px)</p>
+                    <p><strong>border-spacing: ___;</strong> = Tira o espaço entre as bordas da tabela</p>
+                <hr>
+                    <p><strong>font-weight: ___;</strong> = Peso (lighter, normal, bold, bolder) ou (100 - 900)</p>
+                <hr>
+                    <h2>Outline -> Espaço entre a borda e a margem</h2>
+                    <p><strong>outline-color: ___;</strong> = Cor (nominal, hexadecimal, rgb, hsl) <br>
+                    <p><strong>outline-style: ___;</strong> = Estilo (dotted -> Pontilhado, dashed -> Traçado, solid -> Linha, double -> Linha dupla, groove -> Linha 3D)</p>
+                    <p><strong>outline-width: ___;</strong> = Tamanho (px)</p>
+                </section>
+            </div>
+
+            <h1>CSS Reference</h1>
+                <section>
+                    <h2>CSS Properties A</h2>
+                    <p><a href="https://www.w3schools.com/cssref/css4_pr_accent-color.php" target="_blank">accent-color</a> = Especifica uma cor de destaque para os controles da interface do usuário</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_align-content.php" target="_blank">align-content</a> = Especifica o alinhamento entre as linhas dentro de um contêiner flexível quando os itens não ocupam todo o espaço disponível</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_align-items.php" target="_blank">align-items</a> = Especifica o alinhamento dos itens dentro de um contêiner flexível</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_align-self.php" target="_blank">align-self</a> = Especifica o alinhamento dos itens selecionados dentro de um contêiner flexível</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_all.php" target="_blank">all</a> = Redefine todas as propriedades (except unicode-bidi and direction)</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/css3_pr_animation.php" target="_blank">animation</a> = Uma propriedade abreviada para todas as propriedades animation-*</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_animation-delay.php" target="_blank">animation-delay</a> = Especifica um atraso para o início de uma animação</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_animation-direction.php" target="_blank">animation-direction</a> = Especifica se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_animation-duration.php" target="_blank">animation-duration</a> = Especifica quanto tempo uma animação deve levar para completar um ciclo</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.php" target="_blank">animation-fill-mode</a> = Especifica um estilo para o elemento quando a animação não está sendo reproduzida (antes de começar, depois de terminar ou ambos)</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.php" target="_blank">animation-iteration-count</a> = Especifica o número de vezes que uma animação deve ser reproduzida</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_animation-name.php" target="_blank">animation-name</a> = Especifica um nome para a animação @keyframes</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_animation-play-state.php" target="_blank">animation-play-state</a> = Especifica se a animação está em execução ou pausada</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_animation-timing-function.php" target="_blank">animation-timing-function</a> = Especifica a curva de velocidade de uma animação</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_aspect-ratio.php" target="_blank">aspect-ratio</a> = Especifica a proporção preferida de um elemento</p>
+                </section>
+
+                <section>
+                    <h2>CSS Properties B</h2>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_backdrop-filter.php" target="_blank">backdrop-filter</a> = Define um efeito gráfico para a área atrás de um elemento</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_backface-visibility.php" target="_blank">backface-visibility</a> = Define se a face posterior de um elemento deve ou não ser visível quando voltado para o usuário</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/css3_pr_background.php" target="_blank">background</a> = Uma propriedade abreviada para todas as propriedades background-*</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_background-attachment.php" target="_blank">background-attachment</a> = Define se uma imagem de plano de fundo rola com o restante da página ou é fixa</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_background-blend-mode.php" target="_blank">background-blend-mode</a> = Especifica o modo de mesclagem de cada camada de fundo (cor/imagem)</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_background-clip.php" target="_blank">background-clip</a> = Define até onde o fundo (cor ou imagem) deve se estender dentro de um elemento</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_background-color.php" target="_blank">background-color</a> = Especifica a cor de fundo de um elemento</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_background-image.php" target="_blank">background-image</a> = Especifica uma ou mais imagens de fundo para um elemento</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_background-origin.php" target="_blank">background-origin</a> = Especifica a posição de origem de uma imagem de fundo</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_background-position.php" target="_blank">background-position</a> = Especifica a posição de uma imagem de fundo</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_background-position-x.php" target="_blank">background-position-x</a> = Especifica a posição de uma imagem de fundo no eixo x</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_background-position-y.php" target="_blank">background-position-y</a> = Especifica a posição de uma imagem de fundo no eixo y</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_background-repeat.php" target="_blank">background-repeat</a> = Define se/como uma imagem de fundo será repetida</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_background-size.php" target="_blank">background-size</a> = Especifica o tamanho das imagens de fundo</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_block-size.php" target="_blank">block-size</a> = Especifica o tamanho de um elemento na direção do bloco</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/pr_border.php" target="_blank">border</a> = Uma propriedade abreviada para largura da borda, estilo da borda e cor da borda</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/css_pr_border-block.php" target="_blank">border-block</a> = Uma propriedade abreviada para largura de bloco de borda, estilo de bloco de borda e cor de bloco de borda</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-block-color.php" target="_blank">border-block-color</a> = Define a cor das bordas no início e no fim na direção do bloco</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-block-end-color.php" target="_blank">border-block-end-color</a> = Define a cor da borda no final na direção do bloco
+                    </p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-block-end-style.php" target="_blank">border-block-end-style</a> = Define o estilo da borda no final na direção do bloco</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-block-end-width.php" target="_blank">border-block-end-width</a> = Define a largura da borda no final na direção do bloco</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-block-start-color.php" target="_blank">border-block-start-color</a> = Define a cor da borda no início da direção do bloco</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-block-start-style.php" target="_blank">border-block-start-style</a> = Define o estilo da borda no início da direção do bloco</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-block-start-width.php" target="_blank">border-block-start-width</a> = Define a largura da borda no início na direção do bloco</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-block-style.php" target="_blank">border-block-style</a> = Define o estilo das bordas no início e no fim na direção do bloco</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-block-width.php" target="_blank">border-block-width</a> = Define a largura das bordas no início e no fim na direção do bloco</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/pr_border-bottom.php" target="_blank">border-bottom</a> = Uma propriedade abreviada para border-bottom-width, border-bottom-style e border-bottom-color</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-bottom_color.php" target="_blank">border-bottom-color</a> = Define a cor da borda inferior</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_border-bottom-left-radius.php" target="_blank">border-bottom-left-radius</a> = Define o raio da borda do canto inferior esquerdo</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_border-bottom-right-radius.php" target="_blank">border-bottom-right-radius</a> = Define o raio da borda do canto inferior direito</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-bottom_style.php" target="_blank">border-bottom-style</a> = Define o estilo da borda inferior</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-bottom_width.php" target="_blank">border-bottom-width</a> = Define a largura da borda inferior</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-collapse.php" target="_blank">border-collapse</a> = Define se as bordas da tabela devem ser recolhidas em uma única borda ou separadas</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-color.php" target="_blank">border-color</a> = Define a cor das quatro bordas</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/css3_pr_border-image.php" target="_blank">border-image</a> = Uma propriedade abreviada para todas as propriedades border-image-*</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_border-image-outset.php" target="_blank">border-image-outset</a> = Especifica a quantidade pela qual a área da imagem de borda se estende além da caixa de borda</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_border-image-repeat.php" target="_blank">border-image-repeat</a> = Especifica se a imagem da borda deve ser repetida, arredondada ou esticada</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_border-image-slice.php" target="_blank">border-image-slice</a> = Especifica como fatiar a imagem da borda</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_border-image-source.php" target="_blank">border-image-source</a> = Especifica o caminho para a imagem a ser usada como borda</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_border-image-width.php" target="_blank">border-image-width</a> = Especifica a largura da imagem da borda</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/css_pr_border-inline.php" target="_blank">border-inline</a> = Uma propriedade abreviada para border-inline-width, border-inline-style e border-inline-color</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-inline-color.php" target="_blank">border-inline-color</a> = Define a cor das bordas no início e no fim na direção inline</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-inline-end-color.php" target="_blank">border-inline-end-color</a> = Define a cor da borda no final na direção inline</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-inline-end-style.php" target="_blank">border-inline-end-style</a> = Define o estilo da borda no final na direção inline</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-inline-end-width.php" target="_blank">border-inline-end-width</a> = Define a largura da borda no final na direção inline</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-inline-start-color.php" target="_blank">border-inline-start-color</a> = Define a cor da borda no início da direção inline</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-inline-start-style.php" target="_blank">border-inline-start-style</a> = Define o estilo da borda no início da direção inline</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-inline-start-width.php" target="_blank">border-inline-start-width</a> = Define a largura da borda no início na direção inline</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-inline-style.php" target="_blank">border-inline-style</a> = Define o estilo das bordas no início e no fim na direção inline</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_border-inline-width.php" target="_blank">border-inline-width</a> = Define a largura das bordas no início e no fim na direção inline</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/pr_border-left.php" target="_blank">border-left</a> = Uma propriedade abreviada para todas as propriedades border-left-*</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-left_color.php" target="_blank">border-left-color</a> = Define a cor da borda esquerda</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-left_style.php" target="_blank">border-left-style</a> = Define o estilo da borda esquerda</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-left_width.php" target="_blank">border-left-width</a> = Define a largura da borda esquerda</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/css3_pr_border-radius.php" target="_blank">border-radius</a> = Uma propriedade abreviada para as quatro propriedades border-*-radius</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/pr_border-right.php" target="_blank">border-right</a> = Uma propriedade abreviada para todas as propriedades border-right-*</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-right_color.php" target="_blank">border-right-color</a> = Define a cor da borda direita</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-right_style.php" target="_blank">border-right-style</a> = Define o estilo da borda direita</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-right_width.php" target="_blank">border-right-width</a> = Define a largura da borda direita</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-spacing.php" target="_blank">border-spacing</a> = Define a distância entre as bordas das células adjacentes</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-style.php" target="_blank">border-style</a> = Define o estilo das quatro bordas</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/pr_border-top.php" target="_blank">border-top</a> = Uma propriedade abreviada para largura da borda superior, estilo da borda superior e cor da borda superior</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-top_color.php" target="_blank">border-top-color</a> = Define a cor da borda superior</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_border-top-left-radius.php" target="_blank">border-top-left-radius</a> Define o raio da borda do canto superior esquerdo</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_border-top-right-radius.php" target="_blank">border-top-right-radius</a> = Define o raio da borda do canto superior direito</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-top_style.php" target="_blank">border-top-style</a> = Define o estilo da borda superior</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-top_width.php" target="_blank">border-top-width</a> = Define a largura da borda superior</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_border-width.php" target="_blank">border-width</a> = Define a largura das quatro bordas</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_pos_bottom.php" target="_blank">bottom</a> = Define a posição dos elementos, a partir da parte inferior de seu elemento pai</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_box-decoration-break.php" target="_blank">box-decoration-break</a> = Define o comportamento do plano de fundo e da borda de um elemento na quebra de página ou, para elementos in-line, na quebra de linha.</p>
+                    <p><a href="https://www.w3schools.com/cssref/css_pr_box-reflect.php" target="_blank">box-reflect</a> = The box-reflect property is used to create a reflection of an element.</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.php" target="_blank">box-shadow</a> = Anexa uma ou mais sombras a um elemento</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_box-sizing.php" target="_blank">box-sizing</a> = Define como a largura e a altura de um elemento são calculadas: devem incluir preenchimento e bordas ou não</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_break-after.php" target="_blank">break-after</a> = Especifica se uma quebra de página, coluna ou região deve ou não ocorrer após o elemento especificado</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_break-before.php" target="_blank">break-before</a> = Especifica se uma quebra de página, coluna ou região deve ou não ocorrer após o elemento especificado
+                    </p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_break-inside.php" target="_blank">break-inside</a> = Especifica se uma quebra de página, coluna ou região deve ou não ocorrer dentro do elemento especificado</p>   
+                </section>
+
+                <section>
+                    <h2>CSS Properties C</h2>
+                    <p><a href="https://www.w3schools.com/cssref/pr_tab_caption-side.php" target="_blank">caption-side</a> = Especifica o posicionamento de uma legenda de tabela</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_caret-color.php" target="_blank">caret-color</a> = Especifica a cor do cursor (caret) em entradas, áreas de texto ou qualquer elemento editável</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_charset_rule.php" target="_blank">@charset</a> = Especifica a codificação de caracteres usada na folha de estilo</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_class_clear.php" target="_blank">clear</a> = Especifica o que deve acontecer com o elemento que está ao lado de um elemento flutuante</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_pos_clip.php" target="_blank">clip</a> = Corta um elemento absolutamente posicionado</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_text_color.php" target="_blank">color</a> = Define a cor do texto</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_column-count.php" target="_blank">column-count</a> = Especifica o número de colunas em que um elemento deve ser dividido</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_column-fill.php" target="_blank">column-fill</a> = Especifica como preencher as colunas, balanceadas ou não</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_column-gap.php" target="_blank">column-gap</a> = Especifica o espaço entre as colunas</p>
+                    <p  class="shorthand"><a href="https://www.w3schools.com/cssref/css3_pr_column-rule.php" target="_blank">column-rule</a> = Uma propriedade abreviada para todas as propriedades column-rule-*</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_column-rule-color.php" target="_blank">column-rule-color</a> = Especifica a cor da regra entre as colunas</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_column-rule-style.php" target="_blank">column-rule-style</a> = Especifica o estilo da regra entre as colunas</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_column-rule-width.php" target="_blank">column-rule-width</a> = Especifica a largura da regra entre as colunas</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_column-span.php" target="_blank">column-span</a> = Especifica quantas colunas um elemento deve abranger</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_column-width.php" target="_blank">column-width</a> = Especifica a largura da coluna</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/css3_pr_columns.php" target="_blank">columns</a>Uma propriedade abreviada para column-width e column-count</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_gen_content.php" target="_blank">content</a> = Usado com os pseudo-elementos :before e :after, para inserir o conteúdo gerado</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_gen_counter-increment.php" target="_blank">counter-increment</a> = Aumenta ou diminui o valor de um ou mais contadores CSS</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_gen_counter-reset.php" target="_blank">counter-reset</a> = Cria ou redefine um ou mais contadores CSS</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_class_cursor.php" target="_blank">cursor</a> = Especifica o cursor do mouse a ser exibido ao apontar sobre um elemento</p>
+                </section>
+
+                <section>
+                    <h2>CSS Properties D</h2>
+                    <p><a href="https://www.w3schools.com/cssref/pr_text_direction.php" target="_blank">direction</a> = Especifica a direção do texto/direção da escrita</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_class_display.php" target="_blank">display</a> = Especifica como um determinado elemento HTML deve ser exibido</p>
+                </section>
+
+                <section>
+                    <h2>CSS Properties E</h2>
+                    <p><a href="https://www.w3schools.com/cssref/pr_tab_empty-cells.php" target="_blank">empty-cells</a> = Especifica se deve ou não exibir bordas e fundo em células vazias em uma tabela</p>
+                </section>
+
+                <section>
+                    <h2>CSS Properties F</h2>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_filter.php" target="_blank">filter</a> = Define efeitos (por exemplo, desfoque ou mudança de cor) em um elemento antes que o elemento seja exibido</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/css3_pr_flex.php" target="_blank">flex</a> = Uma propriedade abreviada para as propriedades flex-grow, flex-shrink e flex-basis</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_flex-basis.php" target="_blank">flex-basis</a> = Especifica o comprimento inicial de um item flexível</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_flex-direction.php" target="_blank">flex-direction</a> = Especifica a direção dos itens flexíveis</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/css3_pr_flex-flow.php" target="_blank">flex-flow</a> = Uma propriedade abreviada para as propriedades flex-direction e flex-wrap</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_flex-grow.php" target="_blank">flex-grow</a> = Especifica quanto o item crescerá em relação ao resto</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_flex-shrink.php" target="_blank">flex-shrink</a> = Especifica como o item encolherá em relação ao resto</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_flex-wrap.php" target="_blank">flex-wrap</a> = Especifica se os itens flexíveis devem envolver ou não</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_class_float.php" target="_blank">float</a> = Especifica se um elemento deve flutuar para a esquerda, direita ou nada</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/pr_font_font.php" target="_blank">font</a> = Uma propriedade abreviada para font-style, font-variant, font-weight, font-size/line-height e as propriedades font-family
+                    </p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_font-face_rule.php" target="_blank">@font-face</a> = Uma regra que permite que sites baixem e usem fontes diferentes das fontes "seguras para a Web"</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_font_font-family.php" target="_blank">font-family</a> = Especifica a família de fontes para texto</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_font-feature-settings.php" target="_blank">font-feature-settings</a> = Permite o controle sobre recursos tipográficos avançados em fontes OpenType</p>
+                    <p><a href="#">@font-feature-values</a> = Permite que os autores usem um nome comum em font-variant-alternate para recurso ativado de forma diferente em OpenType</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_font-kerning.php" target="_blank">font-kerning</a> = Controla o uso das informações de kerning (como as letras são espaçadas)</p>
+                    <p><a href="#" target="_blank">font-language-override</a> = Controla o uso de glifos específicos do idioma em um tipo de letra</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_font_font-size.php" target="_blank">font-size</a> = Especifica o tamanho da fonte do texto</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_font-size-adjust.php" target="_blank">font-size-adjust</a> = Preserva a legibilidade do texto quando ocorre fallback de fonte</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_font-stretch.php" target="_blank">font-stretch</a> = Seleciona uma face normal, condensada ou expandida de uma família de fontes</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_font_font-style.php" target="_blank">font-style</a> = Especifica o estilo de fonte do texto</p>
+                    <p><a href="#" target="_blank">font-synthesis</a> = Controla quais tipos de letra ausentes (negrito ou itálico) podem ser sintetizados pelo navegador</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_font_font-variant.php" target="_blank">font-variant</a> = Especifica se um texto deve ou não ser exibido em uma fonte minúscula</p>
+                    <p><a href="#" target="_blank">font-variant-alternates</a> = Controla o uso de glifos alternativos associados a nomes alternativos definidos em @font-feature-values</p>
+                    <p><a href="https://www.w3schools.com/cssref/css3_pr_font-variant-caps.php" target="_blank">font-variant-caps</a> = Controla o uso de glifos alternativos para letras maiúsculas</p>
+                    <p><a href="#" target="_blank">font-variant-east-asian</a> = Controla o uso de glifos alternativos para scripts do Leste Asiático (por exemplo, japonês e chinês)</p>
+                    <p><a href="#" target="_blank">font-variant-ligatures</a> = Controla quais ligaduras e formas contextuais são usadas no conteúdo textual dos elementos aos quais se aplica</p>
+                    <p><a href="#" target="_blank">font-variant-numeric</a> = Controla o uso de glifos alternativos para números, frações e marcadores ordinais</p>
+                    <p><a href="#" target="_blank">font-variant-position</a> = Controla o uso de glifos alternativos de tamanho menor posicionados como sobrescritos ou subscritos em relação à linha de base da fonte</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_font_weight.php" target="_blank">font-weight</a> = Especifica o peso de uma fonte</p>
+                </section>
+
+                <section>
+                    <h2>CSS Properties G</h2>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/css3_pr_gap.php" target="_blank">gap</a> = Uma propriedade abreviada para as propriedades de intervalo row-gap e intervalos column-gap</p>
+                    <p><a href="https://www.w3schools.com/cssref/pr_grid.php" target="_blank">grid</a> = Uma propriedade abreviada para grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns e as propriedades grid-auto-flow</p>
+                    <p class="shorthand"><a href="https://www.w3schools.com/cssref/pr_grid-area.php" target="_blank">grid-area</a> = Especifica um nome para o item da grade ou esta propriedade é uma propriedade abreviada para as propriedades grid-row-start, grid-column-start, grid-row-end e grid-column-end</p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+                    <p><a href="" target="_blank"></a></p>
+
+                </section>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="index.html" rel="prev"><button>Home</button></a>
+                <a href="index002.html" rel="prev"><button>Conteúdo</button></a> 
+                <a href="index003.html" rel="prev"><button>HTML5</button></a>
+                <a href="index004.html"><button>CSS3</button></a>
+                <a href="index005.html" rel="next"><button>Exercícios</button></a>
+            </nav>
+        </footer>
+    </body>
+</html>
+<!-- TAGS CSS -->

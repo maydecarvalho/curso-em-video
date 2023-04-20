@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Soul';
+    src: url('../font/SoulBillani.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Kid';
+    src: url('../font/Kid\ Stories.ttf') format('truetype');
+}
+:root {
+    --color0: #ffffff;
+    --color1: #B6CEDB;
+    --color2: #74B7DB;
+    --color3: #217AA9; 
+    --color4: #5D93B0;
+    --color5: #244180;
+    --color6: #000000;
+
+    --font0: Verdana, Geneva, Tahoma, sans-serif;
+    --font1: 'Soul';
+    --font2: 'Kid';
+    --font3: 'Anonymous Pro', monospace;
+}
+/* CONTEUDO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+header {
+    background-color: var(--color3);
+    height: 14vh;
+    padding: 2.5%;
+    text-align: center;
+}
+header>nav>a>button {
+    background-color: var(--color1);
+    border: none;
+    border-radius: 5px;
+    color: var(--color6);
+    font: bold 1em var(--font3);
+    margin: 0 1%;
+    padding: 5px 10px;
+}
+header>nav>a>button:hover {
+    background-color: var(--color4);
+    color: var(--color0);
+    text-decoration: underline;
+}
+/* MAIN */
+main {
+    background-color: var(--color1);
+}
+section {
+    padding: 1% 0;
+}
+section>h1 {
+    font: 1.8em var(--font2);
+    color: var(--color6);
+    letter-spacing: 5px;
+    padding: 1% 0;
+    text-align: center;
+}
+section>h1:hover {
+    color: var(--color2); 
+}
+section>h2 {
+    color: var(--color5);
+    font: 1.1em var(--font1);
+    letter-spacing: 3px;
+    margin-left: 5%;
+}
+section>p {
+    color: var(--color5);
+    font: 0.9em var(--font0);
+    margin: 1% 5%;
+    text-indent: 30px;
+    text-align: justify;
+}
+section>p>small {
+    color: var(--color3);
+    font-weight: bold;
+}
+section>p>strong {
+    color: var(--color3);
+    font: bold 1.1em var(--font3);
+}
+section>p>img {
+   margin: 2%;
+   width: 50%;
+}
+/* TABELA */
+table {
+    background-color: var(--color0);
+    border-collapse: collapse;
+    margin: 2% 5%;
+}
+table>thead>tr>th {
+    background-color: var(--color2);
+    color: var(--color5);
+    font-family: var(--font0);
+    padding: 1%;
+    width: 1%;
+}
+table, thead>tr>th, tbody>tr>td {
+    border: 1px solid var(--color6);
+}
+table>tbody>tr>td {
+    color: var(--color3);
+    padding: 1%;
+    text-align: center;
+    width: auto;
+}
+table>tbody>tr>td.vermelho {
+    background-color: red;
+    color: var(--color0);
+    font: 1em var(--font1);
+}
+table>tbody>tr>td.amarelo {
+    background-color: yellow;
+    color: var(--color6);
+    font: 1em var(--font1);
+}
+table>tbody>tr>td.laranja {
+    background-color: orange;
+    color: var(--color0);
+    font: 1em var(--font1);
+}
+table>tbody>tr>td.verde {
+    background-color: green;
+    color: var(--color6);
+    font: 1em var(--font1);
+}
+table>tbody>tr>td.azul {
+    background-color: blue;
+    color: var(--color0);
+    font: 1em var(--font1);
+}
+table>tbody>tr>td.roxo {
+    background-color: darkviolet;
+    color: var(--color6);
+    font: 1em var(--font1);
+}
+table>tbody>tr>td.marrom {
+    background-color: chocolate;
+    color: var(--color0);
+    font: 1em var(--font1);
+}
+table>tbody>tr>td.branco {
+    background-color: white;
+    color: var(--color6);
+    font: 1em var(--font1);
+}
+table>tbody>tr>td.preto {
+    background-color: black;
+    color: var(--color0);
+    font: 1em var(--font1);
+}
+table>tbody>tr>td.cinza {
+    background-color: gray;
+    color: var(--color6);
+    font: 1em var(--font1);
+}
+table>tbody>tr>td.rosa {
+    background-color: palevioletred;
+    color: var(--color0);
+    font: 1em var(--font1);
+}
+/* FOOTER */
+footer {
+    background-color: var(--color3);
+    height: 13vh;
+    padding: 2%;
+    text-align: center;
+}
+footer nav a>button {
+    background-color: var(--color1);
+    border: none;
+    border-radius: 5px;
+    font: bold 1em var(--font3);
+    letter-spacing: 1px;
+    margin: 0 1%;
+    padding: 5px 10px;
+}
+footer nav a>button:hover {
+    background-color: var(--color4);
+    color: var(--color0);
+    text-decoration: underline;
+}
+/* CELULAR */
+@media (max-width: 450px) {
+    header {height: 18vh; padding: 5% 0;}
+    header nav a>button {margin: 2%;}
+    section>p {padding: 1%;}
+    footer {height: 15vh; padding: 4% 0;}
+    footer nav a>button {margin: 2%;}
+}
+/* CONTEUDO */

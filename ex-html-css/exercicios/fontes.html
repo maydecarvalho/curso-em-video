@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fontes</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+            @font-face {
+            font-family: 'Love';
+            src: url('fonts/love\ larry\ ttf.ttf') format('truetype');
+            }
+            @font-face {
+            font-family: 'Gothic';
+            src: url('fonts/Sketch\ Gothic\ School.ttf') format('truetype');
+            }
+            * {
+                margin: 1%;
+                padding: 0;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            section h1 {
+                color: crimson;
+                text-align: center;
+            }
+            section p {
+                text-align: justify;
+            }
+            div {
+                display:inline-block; /* exibe uma div ao lado da outra, em linha */
+                width: 150px;
+                height: 150px;
+            }
+            div#area01 {
+                background-color: #3198E2;
+            }
+            div#area02 {
+                background-color: #B93590;
+            }
+            div#area03 {
+                background-color: #FDD579;
+            }
+            div#area04 {
+                background-color: #E33F5F;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>FONTES COM O GOOGLE FONTS</h1>
+
+                <p>Utilizando a fonte <span style="font: 1.5em 'Kaushan Script', cursive;">Kaushan Script</span></p> <br>
+                <p>Utilizando a fonte <span style="font: bold 1.5em 'Indie Flower', cursive;">Indie Flower</span></p>
+     
+
+            <h1>FONTES EXTERNAS</h1>
+            
+                <p>Utilizando a fonte <span style="font: 1.3em 'Love', Courier cursive;">Love</span></p>
+                <p>Utilizando a fonte <span style="font: normal 2em 'Gothic', Courier, cursive;">Gothic</span></p>
+
+            <h1>IDENTIFICADORES EM CSS</h1>
+            <p>Vários elementos podem ter uma mesma <mark>classes</mark>. Mas se quisermos <mark>identificar</mark> os elementos, dando um "nome" específico para cada um, podemos usar os IDs. Em um mesmo documento, <strong>não podemos ter dois elementos com o mesmo ID!</strong></p>
+        
+            <div id="area01"></div>
+            <div id="area02"></div>
+            <div id="area03"></div>
+            <div id="area04"></div>
+        </section>
+    </body>
+</html>

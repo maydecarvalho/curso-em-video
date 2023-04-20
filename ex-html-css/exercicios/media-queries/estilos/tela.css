@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Estilo para Telas (SCREEN) */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font: 1em Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: rgb(158, 158, 158);
+}
+header > h1 {
+    text-align: center;
+}
+menu ul {
+    background-color: gray;
+    list-style-type: none;
+}
+menu li {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+article {
+    display: block;
+    margin: auto;
+    width: 600px;
+}
