@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>HTML - CSS - JavaScript</title>
+    </head>
+    <body onresize="mudouTamanho()">
+        <header>
+            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <nav id="itens">
+                <ul>
+                    <p>HTML</p>
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+
+                    <p>CSS</p>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                    <li><a href="#">Opção 6</a></li>
+
+                    <p>JavaScript</p>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                    <li><a href="#">Opção 6</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+        </main>
+        <script>
+            function clickMenu() {
+                if (itens.style.display == 'block') {
+                    itens.style.display = 'none'
+                } else {
+                    itens.style.display = 'block'
+                }
+            }
+        </script>
+    </body>
+</html>
