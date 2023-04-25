@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="ico/favicon-emily.ico.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="estilos/code-style.css">
+        <title>HTML - CSS - JavaScript</title>
+    </head>
+    <body onresize="mudouTamanho()">
+        <header>
+            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <nav id="itens">
+                <ul>
+                    <p>HTML</p>
+                    <li><a href="#cpq">Caracteres, Parágrafos e Quebras de Linha</a></li>
+                    <li><a href="#if">Imagens e Favicons</a></li>
+                    <li><a href="#">Opção 3</a></li>
+
+                    <p>CSS</p>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                    <li><a href="#">Opção 6</a></li>
+
+                    <p>JavaScript</p>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                    <li><a href="#">Opção 6</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>COMO FUNCIONA A HTML E AS CSS?</h1>
+                <h2>“Eu <del>programo</del> em HTML”</h2>
+                <p>Talvez você já tenha ouvido alguém falar a frase acima. Geralmente ela é dita por pessoas iniciantes ou então aqueles que se baseiam apenas na capa de um único livro da série <strong>Head First</strong> (use a cabeça), que estampa na capa “programação em HTML5”. Acontece que a própria sigla já entrega seu objetivo: <strong>Hypertext Markup Language</strong> (Linguagem de Marcação Hipertexto). Ela não funciona com instruções, como toda linguagem de programação. A HTML é baseada em marcações chamadas tags. Além disso, o termo <strong>“programação”</strong> envolve estruturas especializadas que dependem do uso de <strong>variáveis simples</strong> e <strong>compostas</strong>, <strong>condições</strong>, <strong>laços</strong> e até coisas mais complexas como <strong>objetos</strong>. Nada disso existe na HTML nem nas CSS. Por outro lado, todas essas características estão presentes na linguagem <strong>JavaScript</strong>. Essa sim é uma <strong>Linguagem de Programação</strong>. HTML trabalha fundamentada apenas nas <strong>marcas</strong> ou <strong>etiquetas</strong> (do Inglês <strong>tag</strong>) e as CSS funcionam baseadas nos <strong>seletores</strong>, <strong>propriedades</strong> e <strong>valores</strong>.</p>
+
+                <h2>Para que serve HTML, CSS e JS?</h2>
+                <p>Uma das coisas mais importantes para o desenvolvimento de sites é compreender para que serve esse trio de tecnologias, que geralmente são estudados em conjunto. De forma resumida, temos um panorama simples:</p>
+
+                <table>
+                    <tr>
+                        <th scope="col">HTML</td>
+                        <th scope="col">CSS</td>
+                        <th scope="col">JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Conteúdo</td>
+                        <td scope="row">Estilo</td>
+                        <td scope="row">Interatividade</td>
+                    </tr>
+                </table>
+
+                <h2>Tags HTML, aí vamos nós</h2>
+                <p>A HTML funciona baseada em marcações específicas chamadas <strong>tags</strong>. Uma tag é um conjunto de palavras entre sinais de <strong>colchete angular</strong>, conforme representado a seguir.</p>
+
+                <div>
+                    <strong>&lt;p></strong>Exemplo de parágrafo<strong>&lt;/p></strong>
+                    <p><mark><strong>&lt;p></strong> - Abertura de tag / <strong>Exemplo de parágrafo</strong> - Conteúdo / <strong>&lt;/p></strong> - Fechamento de tag</mark></p>
+                </div>
+
+                <p>A maioria das tags possuem uma <strong>abertura</strong> e um <strong>fechamento</strong>, e você identifica isso pela presença da barra no fechamento da tag. Além disso, as tags também podem ter atributos e valores, que vão configurar seu comportamento:</p>
+
+                <div>
+                    <strong>&lt;a href="destino.html"></strong>Exemplo de link<strong>&lt;/a></strong>
+                    <p><mark><strong>&lt;a</strong> - Abertura de tag / <strong>href</strong> - Parâmetro / <strong>"destino.html"</strong> - Valor / Exemplo de link - Conteúdo / <strong>&lt;/a></strong> - Fechamento de tag</mark></p>
+                </div>
+
+                <p>Uma mesma tag pode ter vários parâmetros, cada um com seu valor. Entretanto, algumas tags não possuem a necessidade de <strong>conteúdo</strong> interno e por isso não possuem fechamento. É o caso, por exemplo, das tags &lt;br> e &lt;img>.</p>
+
+                <h2>Eu ainda uso &lt;font>, &lt;center>, &lt;s>, &lt;u>, … </h2>
+                <p>Com o surgimento da versão 5 da HTML, algumas tags simplesmente deixaram de existir ou tornaram-se <strong>obsoletas</strong>. Uma tag obsoleta pode até estar funcionando no seu navegador hoje em dia, mas a própria <strong>W3C</strong> - consórcio responsável por manter as especificações da linguagem - recomenda que elas <strong>não sejam mais usadas</strong> pelos profissionais e aos poucos não serão mais suportadas pelos navegadores nas suas futuras versões.</p>
+
+                <h2>Chegou a vez dos seletores CSS</h2>
+                <p>As <strong>CSS</strong> são as <strong>Cascading Style Sheets</strong> (Folhas de Estilo em Cascata). Elas são usadas para configurar um <strong>resultado visual</strong> dos elementos HTML. As configurações das CSS são realizadas através dos <strong>seletores</strong>. Vamos ver a anatomia de um seletor.</p>
+
+                <div>
+                    <strong>p {</strong> font-family: Arial; font-size: 12pt; color: blue; <strong>}</strong>
+                    <p><mark><strong>p</strong> - Seletor / font-family: Arial - Declaração / color - Propriedade / blue - Valor</mark></p>
+                </div>
+                
+                <p>O seletor apresentado anteriormente vai configurar o visual dos elementos de parágrafo do site corrente. O uso das chaves delimita todas as declarações relativas ao seletor atual. No seletor que eu te mostrei, serão feitas três configurações:</p>
+
+                    <ul>
+                        <li>A fonte escolhida foi Arial.</li>
+                        <li>O tamanho da letra será 12pt (pontos).</li>
+                        <li>A cor da letra será azul.</li>
+                    </ul>
+                
+                <p>Note que, ao final de cada <strong>declaração</strong>, temos que colocar ponto-e-vírgula para indicar que ela se encerrou. Todas as <strong>propriedades</strong> devem ter seu <strong>valor</strong>, e eles devem ser separados por dois pontos. Você não é obrigado(a) a usar nenhuma declaração específica. Só utilize a propriedade que você realmente deseja alterar.</p>
+
+                <h2>Estrutura básica de um documento HTML</h2>
+                <p>Ao criar um novo documento HTML, devemos sempre escrever a estrutura básica de um documento desse formato. Vamos analisar cada uma das 11 linhas que compõem esse documento base.</p>
+
+                <section>
+                        <p>
+                            01| &lt;DOCTYPE html> <br>
+                            02| &lt;html lang="PT-BR"> <br>
+                            03| &lt;head> <br>
+                            04| &lt;meta charset="UTF-8"> <br>
+                            05| &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> <br>
+                            06| &lt;title>Document&lt;/title> <br>
+                            07| &lt;/head> <br>
+                            08| &lt;body> <br>
+                            09| <br>
+                            10| &lt;/body> <br>
+                            11| &lt;/html> <br>
+                        </p>
+                </section>
+
+                <ul>
+                    <li><strong>Linha 1:</strong> Indica que o documento atual será escrito na versão mais atualizada da linguagem (no caso, HTML5)</li>
+                    <li><strong>Linhas 2 e 11:</strong> Delimitam o documento HTML, que é sempre dividido em duas partes: a cabeça e o corpo. Na linha 2, também estamos indicando que o conteúdo
+                    desse site será no idioma Português do Brasil.</li>
+                    <li><strong>Linhas 3 e 7:</strong> Delimitam a cabeça da página, local onde são realizadas algumas configurações iniciais como formatos, estilos, ícone de favoritos, etc.</li>
+                    <li><strong>Linha 4:</strong> adiciona ao documento atual o suporte a caracteres acentuados. Remover essa linha pode causar erros de renderização de algumas letras na tela.</li>
+                    <li><strong>Linha 5:</strong> Indica que o conteúdo aparecerá, por padrão, ocupando todo o espaço disponível da tela e com uma escala de 1:1.</li>
+                    <li><strong>Linha 6:</strong> Configura o título da página, que aparecerá como identificação da aba do navegador, ao lado do favicon.</li>
+                    <li><strong>Linhas 8 e 10:</strong> Delimitam o corpo da página, a maior porção do site, que vai aparecer na tela. É aqui onde colocaremos todo o nosso conteúdo.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1 id="cpq">CARACTERES, PARÁGRAFOS E QUEBRAS DE LINHA</h1>
+                <h2>Vamos começar com os parágrafos</h2>
+                <p>No capítulo anterior já vimos como criar um parágrafo de forma simples, foi só colocar todo o conteúdo dentro da tag &lt;p>&lt;/p>. Mas o que eu não comentei na ocasião foi o comportamento do navegador em relação à posição das palavras.</p>
+
+                <div>
+                    <p><mark>Se precisar quebrar o texto em algum lugar específico <br> como esse, você pode usar a tag &lt;br></mark></p>
+                </div>
+
+                <p>Quem comanda quebras de linhas/parágrafos não é o fato de apertar Enter. Quem manda são as tags HTML. A tag &lt;br> significa literalmente “quebre a linha” (break row).</p>
+
+                <p>Exemplo de imagens, parágrafos e quebras de linhas <a href="https://maydecarvalho.github.io/curso-em-video/html-css/desafios/d002/index.html" target="_blank">Clique aqui.</a></p>
+
+                <p>Outra coisa que você deve ter notado é que tivemos problemas para fazer uma tag aparecer no seu navegador. Isso acontece porque, se você colocar &lt;br> no seu código, o navegador vai entender como “quebre a linha” e não pra fazer ela aparecer. Para isso, no lugar de usar os colchetes angulares < >, usamos caracteres especiais referentes ao código desses símbolos.</p>
+
+                <ul>
+                    <li>Um &lt; estamos pedindo pra colocar o símbolo menor que (less than).</li>
+                    <li>Um &gt; estamos pedindo para coloca o símbolo maior que (greater than).</li>
+                </ul>
+
+                <p>Existem alguns outros símbolos que podem ser exibidos usando códigos. Esses códigos são chamados de HTML Entities,</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Símbolo</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Entitiy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row"></td>
+                            <td scope="row">Espaço em branco</td>
+                            <td scope="row">& nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">®</td>
+                            <td scope="row">Marca registrada</td>
+                            <td scope="row">& reg;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">©</td>
+                            <td scope="row">Copyright</td>
+                            <td scope="row">& copy;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">™</td>
+                            <td scope="row">Trade Mark</td>
+                            <td scope="row">& trade;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">€</td>
+                            <td scope="row">Euro</td>
+                            <td scope="row">& euro;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">£</td>
+                            <td scope="row">Libra (pound)</td>
+                            <td scope="row">& pound;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">¥</td>
+                            <td scope="row">Yen</td>
+                            <td scope="row">& yen;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">¢</td>
+                            <td scope="row">Cent</td>
+                            <td scope="row">& cent;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">∅</td>
+                            <td scope="row">Vazio</td>
+                            <td scope="row">& empty;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">∑</td>
+                            <td scope="row">Soma</td>
+                            <td scope="row">& sum;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Δ</td>
+                            <td scope="row">Delta</td>
+                            <td scope="row">& Delta;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">←</td>
+                            <td scope="row">Seta esquerda</td>
+                            <td scope="row">& larr;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">↑</td>
+                            <td scope="row">Seta acima</td>
+                            <td scope="row">& uarr;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">→</td>
+                            <td scope="row">Seta direita</td>
+                            <td scope="row">& rarr;</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">↓</td>
+                            <td scope="row">Seta baixo</td>
+                            <td scope="row">& darr;</td>
+                        </tr>
+                    </tbody>
+                </table> <br>
+
+                <h2>Inserindo Emojis</h2>
+                <p>Outra coisa que você pode adicionar às suas páginas são os emojis, onde cada símbolo possui um código Unicode. Para uma pesquisa mais precisa e atualizada, acesse o site da <a href="https://emojipedia.org/" target="_blank">emojipedia.org.</a></p>
+
+                <ul>
+                    <li>&#x1F607 Código U+1F607</li>
+                    <li>&#x1F970 Código U+1F970</li>
+                    <li>&#x1F979 Código U+1F979</li>
+                </ul>
+
+                <p>Escolha uma categoria, clique no emoji escolhido e procure o seu <strong>Codepoints</strong>. No caso do exemplo acima, escolhemos o emoji com o código <strong>U+1F607</strong>. Para inserir esse emoji no seu site, use o código adaptado <strong>&#x 1F607</strong> em qualquer lugar que aceite palavras. É só substituir o <strong>U+</strong> por <strong>&#x</strong> (com a letra x minúscula).</p>
+
+                <p>Exemplo de Emojis <a href="https://maydecarvalho.github.io/curso-em-video/html-css/desafios/d003/index.html" target="_blank">Clique aqui.</a></p>
+            </section>
+
+            <section>
+                <h1 id="if">IMAGENS E FAVICONS</h1>
+                <h2>Vamos falar sobre formatos de Imagem</h2>
+                <p>Existem vários formatos de imagem, cada um com suas características, vantagens e desvantagens. Porém, vamos nos focar aqui nos dois formatos compactados mais usados para a criação de sites: <strong>JPEG e PNG</strong>.</p>
+
+                <p>O algoritmo de compactação <strong>JPEG</strong> é usado para gerar imagens fotográficas com um tamanho extremamente reduzido. Ele foi criado em 1983 por <strong>Eric Hamilton</strong> e hoje é gerenciado pelo <strong>Joint Photographics Experts Group</strong>. Ele é amplamente utilizado por câmeras digitais modernas e programas de tratamento de imagens. A grande vantagem do uso de arquivos <strong>JPG</strong> (em formato JPEG) é gerar arquivos muito pequenos e que ocupam pouco espaço em disco. Isso é muito importante, pois quando colocarmos nosso site no ar, ele tem que ser leve e carregar as imagens muito rapidamente.</p>
+
+                <p>O formato <strong>Portable Network Graphics</strong> (PNG) surgiu em 1996, desenvolvido pelo <strong>W3C</strong> (o mesmo órgão que gerencia a linguagem HTML) com o objetivo de substituir o formato <strong>GIF</strong> (que hoje voltou a ser popular graças ao WhatsApp e Instagram). Ele também é um formato compactado, mas não tanto quanto o JPEG. A principal característica do PNG - e que o diferencia do JPEG - é a capacidade de configurar a opacidade de cada pixel (deixá-lo transparente ou com transparência limitada).</p>
+
+                <p>Na hora de escolher o formato de imagem para o seu site, opte sempre pelo formato JPEG com uma compactação entre 30% e 50%. O formato PNG só deverá ser usado quando precisarmos de transparência na foto.</p>
+
+                <h2>Como carregar uma imagem em HTML</h2>
+                <p>A posição dos seus arquivos vai fazer diferença e você deverá adaptar seu código para poder carregar as imagens sem problemas.</p>
+                <section>
+                    <p>
+                        08| &lt;body> <br>
+                        09| &lt;h1>Testando carga de Imagens&lt;/h1> <br>
+                        10| &lt;p>Abaixo você vai ver um exemplo de uma imagem que está na mesma pasta do seu arquivo index.html.&lt;/p> <br>
+                        11| &lt;img src="logo-html.png" alt="Logo do HTML5"> <br>
+                        12| &lt;p>Podemos também carregar imagens que estão em outra pasta, desde que esteja dentro da pasta atual.&lt;/p> <br>
+                        13| &lt;img src="fotos/logo-css.png" alt="Logo do CSS3"> <br>
+                        14| &lt;p>Também podemos carregar imagens externas, e para isso devemos ter sua URL completa&lt;/p> <br>
+                        15| &lt;img src="https://www.jsdotgit.com/js-small.gif" alt="Logo do JavaScript"> <br>
+                        16| &lt;/body> <br>
+                    </p>
+                </section>
+
+                <p>O código acima só está começando na l<strong>inha 8</strong> por questões de praticidade.</p>
+                <ul>
+                    <li><strong>Linha 11:</strong> Adicionamos a tag &lt;img>, responsável por carregar imagens que estão na pasta do projeto atual ou em links externos. Essa tag tem como parâmetros básicos o src (que vem de source, origem) e alt (que vem de alternative ou texto alternativo).</li>
+                    <li><strong>Linha 13:</strong> Vai carregar a imagem logo-css.png que está dentro da pasta fotos, como vimos anteriormente. Note que foi necessário colocar o nome da pasta seguido de uma barra antes de colocar o nome do arquivo. Se isso não for obedecido, simplesmente a imagem não vai carregar!</li>
+                    <li><strong>Linha 15:</strong> Fizemos a carga de um arquivo que não estava na pasta do projeto. A imagem js-small.gif está localizada em outro domínio, o jsdotgit.com. Nesse caso, precisamos indicar o caminho completo (URL) da imagem.</li>
+                </ul>
+
+                <h2>Para que servem os textos alternativos?</h2>
+                <p>Toda imagem deve ter um texto alternativo, mesmo você achando que isso é muito chato de fazer. Textos alternativos ajudam muito na indexação do seu site em mecanismos de busca e também ajudam muito na <strong>Acessibilidade</strong>, pois se um visitante for deficiente visual, seu navegador vai ser capaz de descrever que tipo de foto está sendo mostrada ali. Tente ser objetivo na descrição da sua imagem, mas crie textos que fazem sentido. Os textos alternativos também auxiliam o Google a saber o que tem dentro da sua foto e exibi-la nos resultados de busca do <strong>Google Imagens</strong>.</p>
+
+                <h2>Usando Ícone de Favoritos (favicon)</h2>
+                <p>Para usar um favicon no seu site, você precisa ter o arquivo do ícone, que geralmente está no formato <strong>ICO</strong>. Se quiser baixar alguns ícones prontos, recomendo o site <a href="https://www.iconarchive.com/" target="_blank">IconArchive</a>. Se você tiver o dom e muita paciência, pode desenhar seu favicon no site <a href="https://www.favicon.cc/" target="_blank">favicon.cc</a>. Agora, se seu objetivo é criar um ícone personalizado para seu site baseado em imagens que você já tem, recomendo o site <a href="https://favicon.io/" target="_blank">favicon.io</a>, onde você pode submeter qualquer imagem e baixar um pacote com vários formatos de favicon. Lá você também vai poder criar um ícone de favoritos a partir de um texto ou então baseado em um emoji.</p>
+
+                <p>Crie seu arquivo index.html incluindo seu código base automaticamente.  Depois faça uma simples alteração na sua área &lt;head>, incluindo uma tag &lt;link>, digitando apenas a palavra link em uma linha em branco e escolhendo a opção link:favicon.</p>
+
+                <section>
+                    03| &lt;head> <br>
+                    04| &lt;meta charset="UTF-8"> <br>
+                    05| &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> <br>
+                    06| &lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <br>
+                    07| &lt;title>Testando o ícone de Favoritos&lt;/title> <br>
+                    08| &lt;/head> <br>
+                </section>
+
+                <h2>Quais são os formatos aceitos para Favicon?</h2>
+                <p>Apesar da minha indicação para usar o arquivo no formato <strong>ICO</strong>, existem outros formatos suportados para o seu favicon, como o próprio <strong>PNG</strong> que estudamos anteriormente e até o formato <strong>SVG</strong>, que é vetorizado e seria a melhor das opções. Mas se o SVG é a melhor das opções, por que não usá-lo? Infelizmente nem todo navegador é compatível com esse formato e acaba causando algumas inconsistências na exibição do nosso site em outras plataformas.</p>
+            </section>
+
+            
+                <br> <br> <br> <br> <br> <br> <br>     
+        </main>
+
+        <footer>
+            <a href="#burguer"><img src="img/chevron.gif" alt="Imagem Seta Inicio"></a>
+        </footer>
+
+        <script>
+            function clickMenu() {
+                if (itens.style.display == 'block') {
+                    itens.style.display = 'none'
+                } else {
+                    itens.style.display = 'block'
+                }
+            }
+        </script>
+    </body>
+</html>
