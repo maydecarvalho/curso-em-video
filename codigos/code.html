@@ -14,8 +14,8 @@
             <nav id="itens">
                 <ul>
                     <p>HTML</p>
-                    <li><a href="#cpq">Caracteres, Parágrafos e Quebras de Linha</a></li>
-                    <li><a href="#if">Imagens e Favicons</a></li>
+                    <li><a href="#html1">Caracteres, Parágrafos e Quebras de Linha</a></li>
+                    <li><a href="#html2">Imagens e Favicons</a></li>
                     <li><a href="#">Opção 3</a></li>
 
                     <p>CSS</p>
@@ -24,8 +24,8 @@
                     <li><a href="#">Opção 6</a></li>
 
                     <p>JavaScript</p>
-                    <li><a href="#">Opção 4</a></li>
-                    <li><a href="#">Opção 5</a></li>
+                    <li><a href="#java1">Nosso primeiro exercício JavaScript</a></li>
+                    <li><a href="#java2">Interações básicas com o usuário e com o navegador</a></li>
                     <li><a href="#">Opção 6</a></li>
                 </ul>
             </nav>
@@ -83,11 +83,11 @@
                 
                 <p>O seletor apresentado anteriormente vai configurar o visual dos elementos de parágrafo do site corrente. O uso das chaves delimita todas as declarações relativas ao seletor atual. No seletor que eu te mostrei, serão feitas três configurações:</p>
 
-                    <ul>
-                        <li>A fonte escolhida foi Arial.</li>
-                        <li>O tamanho da letra será 12pt (pontos).</li>
-                        <li>A cor da letra será azul.</li>
-                    </ul>
+                <ul>
+                    <li>A fonte escolhida foi Arial.</li>
+                    <li>O tamanho da letra será 12pt (pontos).</li>
+                    <li>A cor da letra será azul.</li>
+                </ul>
                 
                 <p>Note que, ao final de cada <strong>declaração</strong>, temos que colocar ponto-e-vírgula para indicar que ela se encerrou. Todas as <strong>propriedades</strong> devem ter seu <strong>valor</strong>, e eles devem ser separados por dois pontos. Você não é obrigado(a) a usar nenhuma declaração específica. Só utilize a propriedade que você realmente deseja alterar.</p>
 
@@ -122,8 +122,8 @@
                 </ul>
             </section>
 
-            <section>
-                <h1 id="cpq">CARACTERES, PARÁGRAFOS E QUEBRAS DE LINHA</h1>
+            <section id="html1">
+                <h1>CARACTERES, PARÁGRAFOS E QUEBRAS DE LINHA</h1>
                 <h2>Vamos começar com os parágrafos</h2>
                 <p>No capítulo anterior já vimos como criar um parágrafo de forma simples, foi só colocar todo o conteúdo dentro da tag &lt;p>&lt;/p>. Mas o que eu não comentei na ocasião foi o comportamento do navegador em relação à posição das palavras.</p>
 
@@ -245,8 +245,8 @@
                 <p>Exemplo de Emojis <a href="https://maydecarvalho.github.io/curso-em-video/html-css/desafios/d003/index.html" target="_blank">Clique aqui.</a></p>
             </section>
 
-            <section>
-                <h1 id="if">IMAGENS E FAVICONS</h1>
+            <section id="html2">
+                <h1>IMAGENS E FAVICONS</h1>
                 <h2>Vamos falar sobre formatos de Imagem</h2>
                 <p>Existem vários formatos de imagem, cada um com suas características, vantagens e desvantagens. Porém, vamos nos focar aqui nos dois formatos compactados mais usados para a criação de sites: <strong>JPEG e PNG</strong>.</p>
 
@@ -258,6 +258,7 @@
 
                 <h2>Como carregar uma imagem em HTML</h2>
                 <p>A posição dos seus arquivos vai fazer diferença e você deverá adaptar seu código para poder carregar as imagens sem problemas.</p>
+
                 <section>
                     <p>
                         08| &lt;body> <br>
@@ -273,6 +274,7 @@
                 </section>
 
                 <p>O código acima só está começando na l<strong>inha 8</strong> por questões de praticidade.</p>
+
                 <ul>
                     <li><strong>Linha 11:</strong> Adicionamos a tag &lt;img>, responsável por carregar imagens que estão na pasta do projeto atual ou em links externos. Essa tag tem como parâmetros básicos o src (que vem de source, origem) e alt (que vem de alternative ou texto alternativo).</li>
                     <li><strong>Linha 13:</strong> Vai carregar a imagem logo-css.png que está dentro da pasta fotos, como vimos anteriormente. Note que foi necessário colocar o nome da pasta seguido de uma barra antes de colocar o nome do arquivo. Se isso não for obedecido, simplesmente a imagem não vai carregar!</li>
@@ -300,7 +302,162 @@
                 <p>Apesar da minha indicação para usar o arquivo no formato <strong>ICO</strong>, existem outros formatos suportados para o seu favicon, como o próprio <strong>PNG</strong> que estudamos anteriormente e até o formato <strong>SVG</strong>, que é vetorizado e seria a melhor das opções. Mas se o SVG é a melhor das opções, por que não usá-lo? Infelizmente nem todo navegador é compatível com esse formato e acaba causando algumas inconsistências na exibição do nosso site em outras plataformas.</p>
             </section>
 
+            <section>
+                <h1>HISTÓRIA DO JAVASCRIPT</h1>
+                <h2>Desde o Mocha, passando pelo LiveScript… E o marketing!</h2>
+                <p>Começamos tudo em 1995. A World Wide Web tinha acabado de ser criada, junto com a linguagem HTML e seus primeiros navegadores arcaicos. Eu não sei se você sabe, mas hoje em dia não existiriam sites modernos sem o JavaScript, mas naquela época não tinha nada disso. As interatividades eram praticamente inexistentes e nós tínhamos uma Internet muito mais estática e sem graça.</p>
+                
+                <p>Basicamente, os navegadores que “brigavam” pelo mercado eram o recém lançado <strong>Internet Explorer</strong> da Microsoft e o <strong>Netscape</strong> da empresa de mesmo nome.A Microsoft tinha um trunfo na manga: o <strong>Windows</strong>. O que ela fez foi embutir o <strong>IE</strong> no sistema operacional, forçando todo mundo a usar o navegador dela, sem sequer poder desinstalá-lo. O usuário padrão sequer cogitaria instalar um segundo navegador como o <strong>Netscape</strong>, mesmo que o segundo fosse bem melhor.</p>
+
+                <p> Pensando em oferecer uma experiência digna de quebrar a barreira e fazer todo mundo ficar com vontade de instalar o Netscape como um navegador extra, a empresa pensou em adicionar funcionalidades exclusivas que o IE não tinha, uma delas nos interessa bastante: INTERATIVIDADE. E foi em 1995 que um programador chamado <strong>Brendan Eich</strong> saiu da <strong>Silicon Graphics</strong> e foi contratado e começou a trabalhar na Netscape. Ele tinha criado uma linguagem chamada <strong>Mocha</strong>, que daria poderes especiais ao <strong>Netscape 2.0</strong> que sairia no fim do ano. Ao entrar na empresa, Eich e a equipe mudaram o nome da linguagem para <strong>LiveScript</strong>, mas essa nova alcunha demoraria pouco.</p>
+
+                <p>Muito se falava no mercado sobre uma poderosa linguagem chamada <strong>Java</strong>. Os jornais a chamavam de “Linguagem do Futuro”, aquela que mudaria o mundo dali pra frente. Pensando em pegar uma “carona” na fama do Java, a equipe resolveu rebatizar o <strong>LiveScript</strong> para <strong>JavaScript</strong> em uma simples demonstração de decisão de puro marketing. E pra gerar ainda mais confusão, mais tarde ainda surgiu uma parceria entre a <strong>Sun Microsystems</strong> (criadora do Java) e a <strong>Netscape</strong> (criadora do JavaScript).</p>
+
+                <h2>O JavaScript deu certo!</h2>
+                <p>Mesmo com toda confusão gerada entre os leigos, o JavaScript agradou bastante e aqueceu ainda mais a briga entre os navegadores. E deu tão certo que aconteceu o que sempre acontece com tudo aquilo que dá certo: o JavaScript foi CO-PI-A-DO! E a “cópia” partiu de nada mais, nada menos que a <strong>Microsoft</strong>! O Internet Explorer 3 sairia compatível com a linguagem <strong>JScript</strong>, criada pela empresa do Bill Gates. Para combater essa sem-vergonhice da Microsoft, a Netscape resolveu normalizar a linguagem através da organização Européia especializada na criação de padrões para a computação: a <strong>ECMA</strong>.</p>
+                    
+                <p>A primeira versão do ECMA-Script (versão padronizada) só sairia em Junho de 1997, mas até hoje é muito importante, pois faz a linguagem evoluir a cada ano de forma contínua e descentralizada (independente de qualquer empresa particular). E o objetivo de padronizar a linguagem acabou sendo uma ótima escolha, uma vez que em 2008, depois de muito lutar contra a concorrência e abusos da Microsoft, a Netscape faliu e deixou o navegador pra trás. Mas nem tudo foi em vão. Um grupo de desenvolvedores da Netscape se reuniu e fundaram a <strong>Fundação Mozilla</strong>, que mais tarde lançou o conhecido <strong>Firefox</strong>, o sucessor espiritual do Netscape e que está aí até hoje.</p>
+
+                <h2>Surgimento do líder</h2>
+                <p>Enquanto a Microsoft comemorava a vitória contra a Netscape, a gigante <strong>Google</strong> lançava em 2008 a primeira versão do <strong>Google Chrome</strong>. Mas a caminhada foi longa, pois foi só em 2016 que o número de pessoas usando Chrome nos computadores ultrapassou o número de pessoas usando o Internet Explorer. A ideia era ter um navegador mais simples visualmente e sem aquelas barras gigantes com fileiras de botões (Toolbars) que existiam nos outros navegadores.</p>
+
+                <p>Outra arma muito boa que o Chrome tinha era a sua máquina para rodar JavaScript: o poderoso <strong>V8</strong>. Ele era bem mais eficientes do que a concorrência, entregando ótimos resultados para os usuários (mesmo consumindo mais memória que todos os demais). E o <strong>Google Chrome</strong> acabou com o reinado do Internet Explorer nos computadores. O navegador do Google evoluiu muito mais e ganhou o primeiro lugar nos computadores a partir de 2016. A Microsoft até tentou reverter a situação, lançando o navegador <strong>Edge</strong>, mais simples e leve, mas já era tarde demais.</p>
+
+                <h2>O mundo dá voltas…</h2>
+                <p>É quase inacreditável o que aconteceu em 2020. A Microsoft, depois de tentar sucesso com o Edge nos PCs com Windows, resolveu entregar os pontos e reconhecer que a base do software criada para o Chrome era superior. E foi em 2020 que surgiu o novo Edge, baseado no <strong>Projeto Chromium </strong>(a parte open-source do projeto do Google).</p>
+            </section>
+
+            <section>
+                <h2>HTML e CSS não é programação. JavaScript é?</h2>
+                <p>Quando estamos criando código <strong>HTML</strong> e <strong>CSS</strong>, podemos dizer que estamos “desenvolvendo em HTML”, mas é errado dizer que estamos “programando em HTML”. HTML e CSS são linguagens, mas não são <strong>linguagens de programação</strong>. Essas linguagens são mais classificadas como <strong>linguagens de marcações</strong>. Já a <strong>JavaScript</strong> é uma linguagem de programação, considerada uma linguagem de scripts não compilados. Todos os códigos JS são enviados para o navegador do cliente e são interpretados linha-a-linha, gerando o resultado. Sendo assim, podemos dizer “estou programando em JS”, mas não podemos dizer “estou programando em HTML”.</p>
+            </section>
             
+            <section id="java1">
+                <h1>PRIMEIROS PASSOS COM JAVASCRIPT</h1>
+                <h2>Nosso primeiro exercício JavaScript</h2>
+
+                <section>
+                    <p>
+                        01| &lt;DOCTYPE html> <br>
+                        02| &lt;html lang="PT-BR"> <br>
+                        03| &lt;head> <br>
+                        04| &lt;meta charset="UTF-8"> <br>
+                        05| &lt;meta name="viewport" content="width=device-width, initial-scale="1.0"> <br>
+                        06| &lt;title>Primeiro JS&lt;/title> <br>
+                        07| &lt;/head> <br>
+                        08| &lt;body> <br>
+                        09| &lt;h1>Primeiro JavaScript&lt;/h1> <br>
+                        10| &lt;script> <br>
+                        11| window.alert('Olá,Mundo!') <br>
+                        12| &lt;/script> <br>
+                        13| &lt;/body> <br>
+                        14| &lt;/html> <br>
+                    </p>
+                </section>
+
+                <p>Note que a maneira mais simples de usar JS é incluindo o script em um documento HTML. Na recomendação atual, os scripts JS devem ser incluídos no final do corpo do documento HTML, posicionando a tag &lt;script> &lt;/script> logo acima do fechamento da tag &lt;/body>. Tudo aquilo que estiver dentro da tag de script será considerado automaticamente JavaScript pelo seu navegador. Nosso primeiro comando é:</p>
+
+                <div>
+                    <p><mark>window.alert('Olá, Mundo!')</mark></p>
+                </div>
+
+                <p>A palavra window (opcional) é um objeto que indica uma referência à janela atual do navegador. A palavra alert() é um método capaz de disparar uma mini-janela de alerta para avisar algo ao usuário. Dentro dos parênteses do método alert(), temos uma <strong>string</strong> entre aspas (que podem ser ‘aspas simples’, “aspas duplas” ou `crases` para delimitar as palavras que efetivamente aparecerão na janela de alerta.</p>
+
+                <p>Para executar nosso script, basta seguir o mesmo procedimento usado para abrir um arquivo HTML. Note que assim que o arquivo abre, a mensagem de alerta já aparecerá automaticamente, antes mesmo de exibir o título &lt;h1> que foi colocado até mesmo antes da tag &lt;script>. Quando você apertar o botão OK do alerta, a página vai aparecer automaticamente.</p>
+            </section>
+
+            <section id="java2">
+                <h1>INTERAÇÕES BÁSICAS COM O USUÁRIO E COM O NAVEGADOR</h1>
+                <h2>Interagindo com um botão</h2>
+                <p>A maneira mais simples que eu posso imaginar para que possamos interagir com uma página web é com um botão. Nosso objetivo aqui é criar uma página simples, com um botão sensível ao clique e que vai reagir de acordo com essa ação.</p>
+
+                <section>
+                    <p>
+                        01| &lt;DOCTYPE html> <br>
+                        02| &lt;html lang="PT-BR"> <br>
+                        03| &lt;head> <br>
+                        04| &lt;meta charset="UTF-8"> <br>
+                        05| &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> <br>
+                        06| &lt;title>Interação JS&lt;/title> <br>
+                        07| &lt;style> <br>
+                        08| &lt;body {font: 12pt Arial;} <br>
+                        09| &lt;button {font-size: 12pt; padding: 30px;} <br>
+                        10| &lt;/style> <br>
+                        11| &lt;/head> <br>
+                        12| &lt;body> <br>
+                        13| &lt;h1>Interagindo com um botão&lt;/h1> <br>
+                        14| &lt;button onclick="clicou()">Clica em mim!&lt;/button> <br>
+                        15| &lt;script> <br>
+                        16| function clicou() { <br>
+                        17| window.alert('Você clicou no botão!') <br>
+                        18| } <br>
+                        19| &lt;/script> <br>
+                        20| &lt;/body> <br>
+                        21| &lt;/html> <br>
+                    </p>
+                </section>
+
+                <ul>
+                    <li><strong>Linha 14:</strong> Onde criamos o botão. Existe um parâmetro na tag &lt;button> que é o onclick. Note que dentro das aspas eu coloquei o nome de um evento que será tratado pelo JavaScript. A ligação entre o HTML e o JS será pelo nome desse evento.</li>
+                    <li><strong>Linha 16:</strong> Ela é exatamente a definição da função que tratará do evento. Ao contrário do que fizemos no capítulo anterior, , o window.alert( ) não está sozinho dentro do &lt;script>. Ele está justamente dentro da função (identificada pela palavra function do JS).</li> <br>
+
+                    <p>Toda função em JS é relacionada a um <strong>bloco</strong>, que nada mais é do que um conjunto de comandos que estão entre chaves <strong>{ }</strong>. Tudo o que estiver entre chaves em JS, chamaremos de <strong>bloco</strong>.</p>
+
+                    <li><strong>Linha 17:</strong> Não vai executar assim que a página for carregada. No lugar disso, ela será executada só quando a função será disparada, e o modo de disparo nesse caso será feito na linha 14, pelo evento onclick do botão.</li>
+                </ul>
+
+                <h2>Interagindo com o usuário</h2>
+                <p>Outra maneira de usar o JavaScript básico para criar interações é através do método prompt(). Com ele, podemos pedir para o usuário digitar dados e usar isso para causar uma resposta personalizada para ele.</p>
+
+                <section>
+                    <p>
+                        01| &lt;DOCTYPE html> <br>
+                        02| &lt;html lang="PT-BR"> <br>
+                        03| &lt;head> <br>
+                        04| &lt;meta charset="UTF-8"> <br>
+                        05| &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> <br>
+                        06| &lt;title>Dados com JS&lt;/title> <br>
+                        07| &lt;style> <br>
+                        08| &lt;body {font: 12pt Arial;} <br>
+                        09| &lt;button {font-size: 12pt; padding: 30px;} <br>
+                        10| &lt;/style> <br>
+                        11| &lt;/head> <br>
+                        12| &lt;body> <br>
+                        13| &lt;h1>Trabalhando com dados v1.0&lt;/h1> <br>
+                        14| &lt;button onclick="inicio()">Clique para começar!&lt;/button> <br>
+                        15| &lt;script> <br>
+                        16| function inicio() { <br>
+                        17| let nome = window.prompt('Qual é o seu nome?') <br>
+                        18| window.alert(`Olá, ${nome}! É um prazer te conhecer!`)<br>
+                        19| }
+                        20| &lt;/script> <br>
+                        21| &lt;/body> <br>
+                        22| &lt;/html> <br>
+                    </p>
+                </section>
+
+                <ul>
+                    <li><strong>Linha 17:</strong> Tem o método window.prompt(), que gera uma solicitação para que o usuário digite o seu nome. Essa janela se parece bastante com um alerta, mas tem a diferença de incluir uma caixa disponível para aceitar a digitação.</li>
+
+                    <p>Mas como vamos guardar o nome do visitante? Aí entra o início da <strong>linha 17</strong>. A instrução let nome serve para declarar uma <strong>variável</strong> chamada nome, que vai guardar o nome que a pessoa vai digitar. Em JavaScript, o símbolo de = não se lê como “igual”. Na verdade, sempre que você encontrar um =, leia como “recebe”.</p>
+
+                    <p>A linha 17 depois de aprender tudo isso, ficamos com: “A <strong>variável nome</strong> vai <strong>receber</strong> o resultado de um <strong>prompt</strong> que vai aparecer na janela perguntando qual é o nome do usuário”.</p>
+
+                    <div>
+                        <p><mark>let nome = window.prompt('Qual é seu nome?’)</mark></p>
+                    </div>
+
+                    <li><strong>Linha 18:</strong> Temos também uma novidade. Note que dentro do alert(), usamos crases para delimitar a string dessa vez.</li> <br>
+
+                    <div>
+                        <p><mark>window.alert(`Olá, ${nome}! É um prazer te conhecer!`)</mark></p>
+                    </div>
+
+                    <p>Uma <strong>string</strong> que está entre crases tem um nome especial: se chama <strong>template string</strong>. Esse tipo de string é uma das novidades do ECMAScript moderno e quebram um galho gigante! Dentro de uma <strong>template string</strong> podemos usar <strong>placeholders</strong> no seu interior. Um placeholder é representado pelos símbolos ${ } e podem ser usados para facilitar a exibição de conteúdos de variáveis ou expressões. Olhando a <strong>Linha 18,</strong> perceba que ${nome} vai ser substituído pelo conteúdo da variável nome, criada na <strong>linha 17</strong> e que está guardando o nome da pessoa que está rodando o script.</p>
+                </ul>
+            </section>
+           
+           
                 <br> <br> <br> <br> <br> <br> <br>     
         </main>
 
